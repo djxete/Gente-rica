@@ -66,6 +66,22 @@ h2{
     padding: 0 0 0.2rem 0;
 }
 
+.person{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size:16px;
+    
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size:16px;
+    background-color: #ffffff;
+    padding: 10px 5px;
+}
 @media (max-width: 600px){
     .container{
         flex-wrap: wrap;
