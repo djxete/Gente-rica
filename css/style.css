@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    display:flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(236, 233, 233);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1{
+    margin: 3rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid grey;
+    padding: 2rem;
+    flex-basis: 50%;
+}
+
+aside button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.5rem 2rem 0.5rem 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5%;
+    border: 1px solid grey;
+    font-size: 13px;
+    text-align: left;
+    font-weight: bold;
+    outline: 0;
+    cursor: pointer;
+}
+
+aside button i{
+ margin-left: 10px;
+ color: rgb(255, 153, 0);
+}
+
+main{
+    flex-basis: 70%;
+    padding: 0rem 2rem;
+
+}
+h2{
+    border-bottom: 1px solid grey;
+    display:flex;
+    justify-content: space-between;
+    font-weight: 300;
+    padding: 0 0 0.2rem 0;
+}
+
+@media (max-width: 600px){
+    .container{
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    aside{
+        flex-basis: 80%;
+        border: none;
+    }
+    main{
+        flex-basis: 100%;
+        
+    }
+ 
+}
+
+@media (min-width:1920px){
+    .container{
+        width: 35%;
+    }
+    
+}
